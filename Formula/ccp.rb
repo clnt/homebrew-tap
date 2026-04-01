@@ -5,21 +5,21 @@
 class Ccp < Formula
   desc "Manage configuration profiles for Claude Code"
   homepage "https://github.com/clnt/claude-code-profiles"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.1/ccp_0.1.1_darwin_amd64.tar.gz"
-      sha256 "52140043f8feaee94668ca1974313e4ba34965229002808458d899f4371c2a6e"
+      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.2/ccp_0.1.2_darwin_amd64.tar.gz"
+      sha256 "069e72cdb3ed186c24c22f5f6c7c2c496b69a40a2d9f4bc9efaed34992ab85ff"
 
       define_method(:install) do
         bin.install "ccp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.1/ccp_0.1.1_darwin_arm64.tar.gz"
-      sha256 "d2738e6af4adea0a8a6f1b8ff13c9b7fc235fb9bf4195660ef0bcf144b8ad6a1"
+      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.2/ccp_0.1.2_darwin_arm64.tar.gz"
+      sha256 "86bdefef603edc16de4d0e85a2f618010210c31210f55c8d472246b5d58ccf49"
 
       define_method(:install) do
         bin.install "ccp"
@@ -29,15 +29,15 @@ class Ccp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.1/ccp_0.1.1_linux_amd64.tar.gz"
-      sha256 "db777e93aa431e3c53b4e2b96e6ec6820dae3645ecd0304c85b6d136e57bb6e0"
+      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.2/ccp_0.1.2_linux_amd64.tar.gz"
+      sha256 "c80419ea7f30e8aef74a2590170b28e6f9b7c26892711063e9eae3a0181dc992"
       define_method(:install) do
         bin.install "ccp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.1/ccp_0.1.1_linux_arm64.tar.gz"
-      sha256 "08aa6470cd157539c85c358ea3886e991ffad02cf62d1e5e088fca68de8331c0"
+      url "https://github.com/clnt/claude-code-profiles/releases/download/v0.1.2/ccp_0.1.2_linux_arm64.tar.gz"
+      sha256 "ac326cda9e9a866e70beac97a6c99c05965d620ec847156a5e58962ce24e80c1"
       define_method(:install) do
         bin.install "ccp"
       end
